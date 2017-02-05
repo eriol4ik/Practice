@@ -1,0 +1,8 @@
+.button {
+    -fx-background-image: url("replace-icon.png");
+    -fx-background-size: 35;
+}
+
+.button:pressed {
+    -fx-background-image: url("replace-icon-clicked.png");
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="106.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lesson09.ex01.TimerController">
+   <children>
+      <Label fx:id="timerLbl" alignment="CENTER" prefHeight="26.0" prefWidth="123.0" text="0">
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+      </Label>
+      <Button fx:id="startButton" mnemonicParsing="false" onAction="#startTimer" prefHeight="25.0" prefWidth="177.0" text="Start">
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+      </Button>
+      <Button fx:id="pauseButton" mnemonicParsing="false" onAction="#pauseTimer" prefHeight="25.0" prefWidth="177.0" text="Pause" />
+   </children>
+</VBox>

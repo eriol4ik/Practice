@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lesson08.jdbc_graphic.Controller.MainController">
+    <center>
+      <TableView fx:id="tableContacts" prefHeight="420.0" prefWidth="244.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="name" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="surname" prefWidth="75.0" text="Surname" />
+            <TableColumn fx:id="age" prefWidth="75.0" text="Age" />
+            <TableColumn fx:id="email" prefWidth="75.0" text="Email" />
+            <TableColumn fx:id="mobile" prefWidth="75.0" text="Mobile" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </center>
+   <bottom>
+      <FlowPane alignment="CENTER" columnHalignment="CENTER" prefHeight="38.0" prefWidth="640.0" BorderPane.alignment="CENTER">
+            <Button id="insert" mnemonicParsing="false" onAction="#onActionInsertButton" text="Insert">
+               <FlowPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </FlowPane.margin>
+            </Button>
+            <Button id="exit" mnemonicParsing="false" onAction="#onActionExitButton" text="Exit">
+               <FlowPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </FlowPane.margin>
+            </Button>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </FlowPane>
+   </bottom>
+</BorderPane>

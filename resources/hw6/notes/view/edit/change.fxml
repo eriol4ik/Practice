@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="232.0" prefWidth="328.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hw6.notes.view.controller.edit.ChangeController">
+  <columnConstraints>
+    <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="7.0" minWidth="7.0" prefWidth="7.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="170.0" minWidth="170.0" prefWidth="170.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="7.0" minWidth="7.0" prefWidth="7.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="76.0" minWidth="76.0" prefWidth="76.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="45.0" minHeight="45.0" prefHeight="45.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="ID:" GridPane.rowIndex="1" />
+      <TextField fx:id="idField" prefHeight="25.0" prefWidth="96.0" promptText="Type ID here" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Label text="Serial:" GridPane.rowIndex="2" />
+      <Label text="Vendor:" GridPane.rowIndex="3" />
+      <Label text="Model:" GridPane.rowIndex="4" />
+      <Label text="Manuf. date:" GridPane.rowIndex="5" />
+      <Label text="Price:" GridPane.rowIndex="6" />
+      <Button fx:id="showInfo" mnemonicParsing="false" onAction="#showInfo" text="Show info" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+      <TextField fx:id="serialField" disable="true" prefHeight="25.0" prefWidth="96.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <TextField fx:id="vendorField" disable="true" prefHeight="25.0" prefWidth="96.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <TextField fx:id="modelField" disable="true" editable="false" prefHeight="25.0" prefWidth="96.0" promptText="will be displayed here" style="-fx-background-color: transparent; -fx-border-insets: 0px;" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+      <TextField fx:id="priceField" disable="true" prefHeight="25.0" prefWidth="96.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+      <Button fx:id="changeInfo" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" mnemonicParsing="false" onAction="#changeInfo" prefHeight="35.0" prefWidth="35.0" stylesheets="/hw6/notes/view/edit/change-button.css" GridPane.columnIndex="4" GridPane.rowIndex="2" GridPane.rowSpan="3" />
+      <TextField fx:id="dateField" disable="true" editable="false" prefHeight="25.0" prefWidth="96.0" promptText="will be displayed here" style="-fx-background-color: transparent; -fx-border-insets: 0px;" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+      <Label fx:id="infoLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="237.0" text="Type ID, then click &quot;show info&quot;" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.columnSpan="3" />
+   </children>
+</GridPane>
