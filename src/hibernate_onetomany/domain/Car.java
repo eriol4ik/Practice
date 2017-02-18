@@ -23,8 +23,10 @@ public class Car {
     @Column(name = "COLOR")
     private String color;
 
-    @OneToMany
+    @OneToMany(targetEntity = Driver.class, mappedBy = "car")
     private Set<Driver> drivers;
+
+    public Car() {}
 
     public Long getId() {
         return id;

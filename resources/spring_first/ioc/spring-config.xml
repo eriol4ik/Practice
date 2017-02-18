@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    <bean class="spring_first.ioc.spring_xml.Cat" id = "murka">
+        <constructor-arg name="name" value="Murka"/>
+        <property name="voice" value="Daj pozhrat'!"/>
+    </bean>
+
+    <bean class="spring_first.ioc.spring_xml.Cat" id = "bars">
+        <constructor-arg name="name" value="Bars"/>
+    </bean>
+
+    <bean class="spring_first.ioc.spring_xml.Car" id="ferrari">
+        <constructor-arg name="model" value="Ferrari"/>
+    </bean>
+
+    <bean class="spring_first.ioc.spring_xml.Driver">
+        <constructor-arg name="car" ref="ferrari"/>
+        <constructor-arg name="name" value="Misha"/>
+        <constructor-arg name="surname" value="Ivanov"/>
+    </bean>
+</beans>

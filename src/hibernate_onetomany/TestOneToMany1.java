@@ -9,7 +9,7 @@ import org.hibernate.SessionFactory;
 /**
  * Created by eriol4ik on 11.02.2017.
  */
-public class Main {
+public class TestOneToMany1 {
     public static void main(String[] args) {
         SessionFactory factory = HibernateSessionFactory.getSessionFactory();
 

@@ -23,7 +23,10 @@ public class Driver {
     private String surname;
 
     @ManyToOne
+    @JoinColumn(name = "car_id")
     private Car car;
+
+    public Driver() {}
 
     public Driver(String name, String surname, Car car) {
         this.name = name;
@@ -54,5 +57,10 @@ public class Driver {
     }
     public void setCar(Car car) {
         this.car = car;
+    }
+
+    @Override
+    public String toString() {
+        return name + " " + surname /*+ ", " + car.getModel()*/;
     }
 }
